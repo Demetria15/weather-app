@@ -1,0 +1,119 @@
+body {
+  margin: 15px;
+  padding: 0 50px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: #000000;
+}
+h2 {
+  color: #000000;
+  font-size: 25px;
+}
+h3 {
+  color: #000000;
+  font-size: 25px;
+}
+img {
+  width: 80px;
+  height: 80px;
+}
+button {
+  margin: 15px 0 30px;
+  border-radius: 25px;
+  border: 1px solid #add8e6;
+  background-color: #add8e6;
+  font-size: 16px;
+  color: #000;
+  line-height: 22px;
+  padding: 16px 24px;
+  text-decoration: none;
+  transition: all 200ms ease;
+  box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+}
+.week-list {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background: #000000;
+}
+
+.week-list > li {
+  text-align: center;
+  float: left;
+  padding: 15px;
+  cursor: pointer;
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+  border-radius: 10px;
+}
+
+.week-list > li:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background: #add8e6;
+  color: #222831;
+  -webkit-box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
+}
+
+.week-list > li.active {
+  background: #fff;
+  color: #222831;
+  border-radius: 10px;
+}
+
+.week-list > li .day-name {
+  display: block;
+  margin: 10px 0 0 0;
+  text-align: center;
+  color: #00008b;
+}
+
+.week-list > li .fa-solid {
+  display: block;
+  height: 30px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.week-list > li .day-temp {
+  display: block;
+  text-align: center;
+  margin: 10px 0 0 0;
+  font-weight: 700;
+}
+
+.week-list > li .day-time {
+  display: block;
+  text-align: center;
+}
+#loading {
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+input {
+  margin-top: 20px;
+  display: block;
+  padding: 16px 24px;
+  border-radius: 25px;
+  border: 1px solid #add8e6;
+}
