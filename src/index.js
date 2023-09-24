@@ -32,7 +32,7 @@ let days = [
   "Saturday"
 ];
 
-let day = days[now.getday()];
+let day = days[now.getDay()];
 let hours = now.getHours();
 let minutes = now.getMinutes();
 let date = document.querySelector("#date");
